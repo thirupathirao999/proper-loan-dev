@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "b5f3a282-fe9d-49a7-8087-42c6184a09f0",
+		"name": "Employee Search API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44739543"
+	},
+	"item": [
+		{
+			"name": "List All Employees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "List Bench Employees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/employees/bench"
+			},
+			"response": []
+		},
+		{
+			"name": "List Employees with Active Project",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/employees/active_projects"
+			},
+			"response": []
+		},
+		{
+			"name": "List Employees with Completed Project",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/employees/completed_projects"
+			},
+			"response": []
+		},
+		{
+			"name": "List The employees by the department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employees/by_department/QA?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees",
+						"by_department",
+						"QA"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of employees by the designation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/employees/by_designation/Support Engineer"
+			},
+			"response": []
+		},
+		{
+			"name": "List the employees by specified location",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5000/employees/by_location/Surat"
+			},
+			"response": []
+		},
+		{
+			"name": "List the employees by salary range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/employees/by_salary_range/40000/100000"
+			},
+			"response": []
+		},
+		{
+			"name": "List the employees above threshold age",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/employees/by_threshold_age/35"
+			},
+			"response": []
+		},
+		{
+			"name": "List the employees between age limits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/employees/by_age_limits/30/40"
+			},
+			"response": []
+		},
+		{
+			"name": "List of employees by project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/employees/by_project/HireX"
+			},
+			"response": []
+		}
+	]
+}
