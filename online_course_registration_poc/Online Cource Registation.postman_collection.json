@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "62f90f21-1e4e-4972-ae1c-489a35e610b2",
+		"name": "Online Cource Registation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44739543"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"thiru\",\r\n    \"email\":\"thiru@gmail.com\",\r\n    \"password\":\"thiru123\",\r\n    \"age\":26,\r\n    \"qualification\":\"b.tech\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/student-registration"
+			},
+			"response": []
+		},
+		{
+			"name": "course_available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/course_available"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"thiru@gmail.com\",\r\n    \"password\": \"thiru123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "course_allotment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"thiru@gmail.com\",\r\n    \"course\":\"java\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000//allot-course"
+			},
+			"response": []
+		},
+		{
+			"name": "list_all_students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"thriu@gmailcom\",\r\n    \"course\":\"java\"\r\n}"
+				},
+				"url": "http://localhost:8000/list_all_students"
+			},
+			"response": []
+		},
+		{
+			"name": "list_students_in_course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/students_course/java"
+			},
+			"response": []
+		}
+	]
+}
