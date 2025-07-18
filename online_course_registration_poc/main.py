@@ -7,9 +7,6 @@ from logger import get_logger
 import json
 import os
 
-app = FastAPI()
-
-
 courses = [
     {"name": "python", "duration": "3 months"},
     {"name": "java", "duration": "3 months"},

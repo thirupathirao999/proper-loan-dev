@@ -12,3 +12,8 @@
 2025-06-29 13:07:49 | INFO     | service:53 | student_allot_course() | [MainThread] | Course allotted: java to thiru@gmail.com
 2025-06-29 13:11:02 | INFO     | service:57 | student_allot_course() | [MainThread] | Course allotted: java to thiru@gmail.com
 2025-06-29 13:11:05 | INFO     | service:48 | student_allot_course() | [MainThread] | thiru@gmail.com already enrolled in: java
+2025-07-03 14:52:54 | WARNING  | service:17 | register_student() | [MainThread] | Registration failed: Email already registered - thiru@gmail.com
+2025-07-03 14:53:22 | INFO     | service:23 | register_student() | [MainThread] | Registered new student: anil@gmail.com
+2025-07-03 14:53:51 | INFO     | service:32 | login_student() | [MainThread] | Login successful: anil@gmail.com
+2025-07-03 14:54:00 | WARNING  | service:35 | login_student() | [MainThread] | Login failed: Invalid credentials - anil@gmail.com
+2025-07-03 14:55:11 | INFO     | service:57 | student_allot_course() | [MainThread] | Course allotted: html to anil@gmail.com

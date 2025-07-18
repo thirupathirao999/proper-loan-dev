@@ -6,5 +6,13 @@
         "age": 26,
         "qualification": "b.tech",
         "course": "java"
+    },
+    {
+        "name": "anil",
+        "email": "anil@gmail.com",
+        "password": "anil123",
+        "age": 25,
+        "qualification": "b.tech",
+        "course": "html"
     }
 ]

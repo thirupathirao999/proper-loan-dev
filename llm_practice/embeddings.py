@@ -1,5 +1,5 @@
 #from transformers import GPT2tokenizer,GPT2model,GPT2LMHeadmodel
-from transformers import GPT2Tokenizer, GPT2Model, GPT2LMHeadModel
+from transformers import GPT2Tokenizer, GPT2Model, GPT2LMHeadModel 
 import torch
 import os
 
