@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "7ee94c7d-4c77-4d7a-9527-9b9270497d80",
+		"name": "FastAPI Items API",
+		"description": "Postman collection for CRUD operations on items using FastAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44739543"
+	},
+	"item": [
+		{
+			"name": "Create Item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Sample Item\",\n  \"description\": \"This is a test item\",\n  \"price\": 19.99\n}"
+				},
+				"url": "http://localhost:8000/items/"
+			},
+			"response": []
+		},
+		{
+			"name": "Read Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/items/687b513300c238a06282fe6a"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Updated Item\",\n  \"description\": \"Updated description\",\n  \"price\": 29.99\n}"
+				},
+				"url": "http://localhost:8000/items/687b513300c238a06282fe6a"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/items/687b513300c238a06282fe6a"
+			},
+			"response": []
+		}
+	]
+}
