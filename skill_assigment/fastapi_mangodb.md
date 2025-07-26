@@ -36,7 +36,7 @@ async def root():
 ```
 To run this app we wnat to install the **uvicorn** by using **pip install uvicorn**. uvicorn is web server to run the fastapi applicatios.
 
-### Interactive API docs
+### Interactive API docs:-
 This interactive API docs are use to check the application in wed browser
 - Open your browser at http://127.0.0.1:8000
     here we can see the output as a json file
@@ -47,7 +47,7 @@ This interactive API docs are use to check the application in wed browser
     You will see the automatic interactive API documentation (provided by Swagger UI).
 - And now, go to http://127.0.0.1:8000/redoc.
     You will see the alternative automatic documentation (provided by ReDoc).
-### Operation that provided by fastapi
+### Operation that provided by fastapi:-
 When building APIs, you normally use these specific HTTP methods to perform a specific action.
 
 Normally you use:
@@ -69,7 +69,7 @@ Pydantic is a Python library used for data parsing, validation, and settings man
 ### installation of pydentic:- 
 ```pip install pydantic```
 
-#### Example using pydentic basemodal
+#### Example using pydentic basemodal:-
 ```python
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -115,7 +115,7 @@ MongoDB is the most popular NoSQL open source document-oriented database. The te
 
 ### Installing MongoDB:-
 Just go to [http://www.mongodb.org/downloads] and select your operating system out of Windows, Linux, Mac OS X and Solaris. A detailed explanation about the installation is provided
-### What is a Cluster,database, coolection in MongoDB
+### What is a Cluster,database, coolection in MongoDB:-
 1. Cluster:- A cluster is a group of MongoDB servers (or instances) that work together to store your data.
 2. Database:- A database is a container for collections. It's similar to a schema in SQL.
 3. collection:- A collection is a group of documents (records).
@@ -128,7 +128,7 @@ MongoDB Cluster
                └── Document (e.g., {"name": "Ali", "age": 30})
 ```
 
-### Methods In Mongodb:-(CRUD operetions)
+### Methods In Mongodb:-(CRUD operetions):-
 | Operation | Command                       |
 | --------- | ----------------------------- |
 | Create    | `insertOne()`, `insertMany()` |
@@ -159,11 +159,11 @@ collection = db["users"]
 collection.insert_one({"name": "Bob", "age": 28})
 ```
 ---
-## section 3:- Console APP Using CRUD Oparetions with fastapi and mangodb
+## section 3:- Console APP Using CRUD Oparetions with fastapi and mangodb:-
 Refer to the console-based API implemented using the CRUD folder structure
 
 
-## section 4:- Interview Qutions
+## section 4:- Interview Qutions:-
 1. **What is FastAPI, and what are its core advantages over Flask?**
 
     FastAPI is a modern Python framework used to build APIs quickly using async features.

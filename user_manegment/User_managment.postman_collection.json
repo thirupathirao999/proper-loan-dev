@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "4574d570-c980-4b80-812a-543929461fbf",
+		"name": "User_managment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44739543"
+	},
+	"item": [
+		{
+			"name": "Registeruser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"thirumola@gmail.com\",\r\n    \"phone\" : \"8501945389\",\r\n    \"password\": \"Thiru123@\",\r\n    \"first_name\" : \"Molamanti\", \r\n    \"last_name\" : \"Thirupathirao\", \r\n    \"dob\" : \"01/01/2011\",\r\n    \"doj\":\"01/01/2025\",\r\n    \"address\" : \"guntur\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseURL}}/registeruser"
+			},
+			"response": []
+		},
+		{
+			"name": "Loginuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"thirumola@gmail.com\",\r\n    \"password\": \"Thiru123@\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseURL}}/loginuser"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8000",
+			"type": "default"
+		}
+	]
+}
