@@ -2,9 +2,6 @@ from passlib.context import CryptContext
 import re
 from datetime import datetime
 
-
-
-
 pwd_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def password_valid(pw: str):
     return (

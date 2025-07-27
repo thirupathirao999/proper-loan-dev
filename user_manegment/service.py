@@ -7,7 +7,7 @@ from exception import PhoneNumberError
 from password import hash_password, verify_password
 
 async def get_user_by_email(email: str):
-    return await user_collection.find_one({"$or": [{"email": email}, {"phone": email}]})
+    return await user_collection.find_one({"$or": [{"email": email}, {"phone":email}]})
 
 def is_valid_phone(phone: str) -> bool:
     return bool(re.fullmatch(r"\d{10}", phone))
@@ -22,7 +22,9 @@ async def register_user(data):
         "password": hashed,
         "password_changed_at": datetime.utcnow(),
         "reset_requests": [],
-        "active": data.active
+        "active": data.active,
+        "forget_password_count":0,
+        "invalid_password_count":0
     })
     return await user_collection.insert_one(user)
 

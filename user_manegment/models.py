@@ -17,4 +17,15 @@ class RegisterUser(BaseModel):
 class LoginUser(BaseModel):
     username: str
     password: str
+
+class ChangePassword(BaseModel):
+    old_password: str
+    new_password: str
+
+class ForgotPassword(BaseModel):
+    username: str
+    new_password: str
     
+
+class LogoutUser(BaseModel):
+    username: str
