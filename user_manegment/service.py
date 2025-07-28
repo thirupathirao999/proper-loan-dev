@@ -21,7 +21,6 @@ async def register_user(data):
     user.update({
         "password": hashed,
         "password_changed_at": datetime.utcnow(),
-        "reset_requests": [],
         "active": data.active,
         "forget_password_count":0,
         "invalid_password_count":0

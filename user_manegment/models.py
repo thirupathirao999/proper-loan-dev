@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,EmailStr
 from typing import Optional
 
 class RegisterUser(BaseModel):
@@ -23,9 +23,12 @@ class ChangePassword(BaseModel):
     new_password: str
 
 class ForgotPassword(BaseModel):
-    username: str
-    new_password: str
+    email:EmailStr
     
+
+class ResetPassword(BaseModel):
+    token:str
+    new_password: str
 
 class LogoutUser(BaseModel):
     username: str

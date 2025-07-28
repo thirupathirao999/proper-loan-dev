@@ -10,3 +10,4 @@ db = client.console_app  # "console_app" is the database name
 
 # Access the "user" collection
 user_collection = db.user
+revoked_tokens = db.revoked_tokens 

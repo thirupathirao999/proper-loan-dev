@@ -34,7 +34,7 @@ class TooManyResetRequestsError(HTTPException):
 
 class InvalidResetTokenError(HTTPException):
     def __init__(self):
-        super().__init__(400, "Invalid or expired password reset token.")
+        super().__init__(400, "Invalid or expired token.")
 
 
 class PasswordMatchError(HTTPException):
@@ -42,6 +42,6 @@ class PasswordMatchError(HTTPException):
         super().__init__(400, "The new password you entered is the same as your old password. Please log in instead.")
 
 
-# class UserInactiveError(HTTPException):
-#     def __init__(self):
-#         super().__init__(403, "User is inactive.")
+class TokenBlocklistError(HTTPException):
+    def __init__(self):
+        super().__init__(401, " invalid token The token is already blocklistd")

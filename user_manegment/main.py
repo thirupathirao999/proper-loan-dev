@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+from logs import configure_logger
 from route import  router
 
-
+logger = configure_logger()
+logger.info("Application started!")
 app = FastAPI(title="User Manegment System")
 app.include_router(router, prefix="/api/v1", tags=["Auth"])
 
