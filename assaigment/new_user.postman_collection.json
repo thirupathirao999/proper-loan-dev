@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "4574d570-c980-4b80-812a-543929461fbf",
+		"name": "new_user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44739543"
+	},
+	"item": [
+		{
+			"name": "Registeruser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"nagroyal1@gmail.com\",\r\n    \"phone\" : \"8501945389\",\r\n    \"password\": \"Thiru123@\",\r\n    \"first_name\" : \"Molamanti\", \r\n    \"last_name\" : \"Thirupathirao\", \r\n    \"dob\" : \"01/01/2011\",\r\n    \"role\" : \"admin\",\r\n    \"address\" : \"guntur\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/registeruser"
+			},
+			"response": []
+		},
+		{
+			"name": "Loginuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"nagroyal1@gmail.com\",\r\n    \"password\": \"Thiru123@\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/loginuser"
+			},
+			"response": []
+		},
+		{
+			"name": "ChangePassword",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuYWdyb3lhbDFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzU2NDg1MzE2fQ.IfoAfzTsN3_DH4Yi1wATeRSzod4jxyvtFxlZiUnQQCU"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"old_password\": \"Thiru123@\",\r\n    \"new_password\":\"Khiru123@\"\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/changepassword"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuYWdyb3lhbDFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzU2NDg2Mjc1fQ.mA7VT92rnzaOTy2FROi3jbs8rqRFbDng1nufNSp8IGY"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuYWdyb3lhbDFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzU2NDg2Mjc1fQ.mA7VT92rnzaOTy2FROi3jbs8rqRFbDng1nufNSp8IGY"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8000/admin"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8000",
+			"type": "default"
+		}
+	]
+}
