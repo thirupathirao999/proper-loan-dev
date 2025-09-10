@@ -1,0 +1,26 @@
+from pydantic import BaseModel,EmailStr
+from typing import Optional
+
+class RegisterUser(BaseModel):
+    email: EmailStr
+    phone: str
+    password: str
+    first_name: str
+    last_name: str
+    dob: str
+    role: str
+    address: str
+    comment: Optional[str] = None
+    active: Optional[str] = None
+
+
+class LoginUser(BaseModel):
+    username: str
+    password: str
+
+class ChangePassword(BaseModel):
+    old_password: str
+    new_password: str
+
+class LogoutUser(BaseModel):
+    username: str
